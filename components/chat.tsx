@@ -29,6 +29,8 @@ export function Chat({
   selectedVisibilityType: VisibilityType;
   isReadonly: boolean;
 }) {
+
+  
   const { mutate } = useSWRConfig();
 
   const {

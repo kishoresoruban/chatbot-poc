@@ -43,7 +43,7 @@ const ollama = createOllama({
   baseURL: process.env.OLLAMA_BASE_URL,
 });
 
-const model = ollama('gemma3', {
+const model = ollama('qwen2.5:0.5b', {
   simulateStreaming: true,
 });
 
@@ -57,7 +57,4 @@ export const myProvider = customProvider({
     'title-model': model,
     'artifact-model': model,
   },
-  // imageModels: {
-  //   'small-model': model,
-  // },
 });
